@@ -2,11 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10"/>
     <title>Title</title>
 </head>
+<style type="text/css">
+
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+</style>
 <body>
 
 <h1>Welcome to stack notifier</h1>
+
+{% for s in stacks %}
+
+<div>
+<div class="divTableRow">
+<div class="divTableCell">{{s.question_id}}</div>
+<div class="divTableCell">{{s.title}}</div>
+<div class="divTableCell"><a href="{{s.href}}">link</a></div>
+</div>
+{% endfor %}
 
 </body>
 </html>
