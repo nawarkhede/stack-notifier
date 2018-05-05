@@ -2,7 +2,7 @@ from django.db import models
 
 
 class StackOverflow(models.Model):
-    question_id = models.BigIntegerField()
+    question_id = models.BigIntegerField(primary_key=True)
     title = models.CharField(max_length=500)
     summary = models.CharField(max_length=2000)
     href = models.URLField()
