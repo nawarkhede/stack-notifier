@@ -1,6 +1,7 @@
 #!/bin/bash
-source "/Users/nawarkhede/.virtualenvs/stack-notifier/bin/activate"
+eval "$(pyenv init -)"
+pyenv activate stack-notifier
 while [ true ]; do
      sleep 1
-     python /Users/nawarkhede/projects/notifier/notifier/cron.py
+     python /Users/nishantnawarkhede/projects/stack-notifier/notifier/cron.py
   done
