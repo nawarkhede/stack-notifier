@@ -22,7 +22,7 @@ pycodestyle==2.4.0
 pyflakes==1.6.0
 Pygments==2.2.0
 pytz==2018.4
-PyYAML==3.12
+PyYAML==5.4
 scandir==1.7
 simplegeneric==0.8.1
 six==1.11.0
